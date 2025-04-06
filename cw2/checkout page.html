@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="kostka-rubika">
+        
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form action="">
+            <label for="card-name">Cardholder name</label>
+            <input type="text" name="card-name" id="card-name" required aria-required="true"><br>
+            <label for="card-number">Card Number</label>
+            <input type="number" name="card-number" id="card-number" required aria-required="true"><br>
+            <label for="card-exp">Expiry Date</label>
+            <input type="text" name="card-exp" id="card-exp" placeholder="MM/YY" required><br>
+            <label for="cvv">CVV</label>
+            <input type="number" name="cvv" id="cvv" min="100" max="999" required><br>
+            <input type="submit" value="Place Order">
+        </form>
+    </section>
+</body>
+</html>
