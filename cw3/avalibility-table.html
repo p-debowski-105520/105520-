@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(189, 255, 233);
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #ttable,#ttable td, #ttable th{
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #ttable td{
+            width: 100px;
+            padding: 3px;
+        }
+        #ttable th, #ttable tr > :first-of-type{
+            background-color: rgb(214, 214, 214);
+        }
+        #legend{
+            text-align: center;
+        }
+        #color{
+            border: 1px solid black;
+            height: 20px;
+            width: 100px;
+            border-collapse: collapse;
+        }
+        td[id="0"]{
+            background-color: rgb(255, 255, 255);
+        }
+        td[id="1"]{
+            background-color: rgb(204, 255, 204);
+        }
+        td[id="2"]{
+            background-color: rgb(114, 255, 114);
+        }
+        td[id="3"]{
+            background-color: rgb(0, 255, 0);
+        }
+        td[id="4"]{
+            background-color: rgb(0, 161, 0);
+        }
+        td[id="5"]{
+            background-color: rgb(0, 88, 0);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table id="ttable">
+            <thead>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </thead>
+            <tr>
+                <td>10 AM</td>
+                <td id="5"></td>
+                <td id="1"></td>
+                <td id="5"></td>
+                <td id="4"></td>
+                <td id="4"></td>
+            </tr>
+            <tr>
+                <td>11 AM</td>
+                <td id="4"></td>
+                <td id="2"></td>
+                <td id="2"></td>
+                <td id="2"></td>
+                <td id="0"></td>
+            </tr>
+            <tr>
+                <td>12 AM</td>
+                <td id="2"></td>
+                <td id="0"></td>
+                <td id="4"></td>
+                <td id="3"></td>
+                <td id="1"></td>
+            </tr>
+            <tr>
+                <td>1 PM</td>
+                <td id="1"></td>
+                <td id="1"></td>
+                <td id="3"></td>
+                <td id="0"></td>
+                <td id="0"></td>
+            </tr>
+        </table>
+
+        <table id="legend">
+            <tr>
+                <td colspan="3">Avalibility</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>
+                    <table id="color">
+                        <tr>
+                            <td id="0"></td>
+                            <td id="1"></td>
+                            <td id="2"></td>
+                            <td id="3"></td>
+                            <td id="4"></td>
+                            <td id="5"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>5+</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

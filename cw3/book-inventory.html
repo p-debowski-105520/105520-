@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        tr[class="read"]{
+            background-image: linear-gradient(#42e666, #fff);
+        }
+        table,tr,td,th{
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 4px;
+            text-align: center;
+        }
+        tr[class="to-read"]{
+            background-image: linear-gradient(#ef3333, #ffffff);
+        }
+        tr[class="in-progress"]{
+            background-image: linear-gradient(#ffff58, #ffffff);
+        }
+        span{
+            display: inline-block;
+        }
+        tr[class="to-read"] span[class="status"]{
+            border: #ff0000 solid 2px;
+            padding: 2px;
+            background-image: linear-gradient(#fff, #ef3333);
+        }
+        tr[class="read"] span[class="status"]{
+            border: #00ff00 solid 2px;
+            padding: 2px;
+            background-image: linear-gradient(#fff, #42e666);
+        }
+        tr[class="in-progress"] span[class="status"]{
+            border: #ff0 solid 2px;
+            background-image: linear-gradient(#fff, #ffff58);
+        }
+        span[class="status"],span[class^="rate"]{
+            width: 150px;
+            height: 30px;
+            padding: 2px;
+
+        }
+        span[class^="rate"] > span{
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            height: 20px;
+            width: 20px;
+            background-color: gray;
+        }
+        span[class~="one"] :first-child {
+            background-image: linear-gradient(#ffff00, #fff);
+        }
+        span[class~="two"] :nth-child(2),span[class~="two"] :nth-child(1){
+            background-image: linear-gradient(#ffff00, #ffffff);
+        }
+        span[class~="three"] span{
+            background-image: linear-gradient(#ffff00, #ffffff);
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Inventory</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Rate</th>
+        </tr>
+        <tr class="read">
+            <td>The Last Ember of Solaria</td>
+            <td>Mira Calloway</td>
+            <td>Science Fiction</td>
+            <td><span class="status">Read</span></td>
+            <td><span class="rate three">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span></td>
+        </tr>
+        <tr class="to-read">
+            <td>Beneath the Willow's Ghost</td>
+            <td>Elias Wren</td>
+            <td>Gothic Horror</td>
+            <td><span class="status">To Read</span></td>
+            <td><span class="rate" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </span></td>
+        </tr>
+        <tr class="in-progress">
+            <td>The Art of Quiet Triumphs</td>
+            <td>Harper Lin</td>
+            <td>Self-Help</td>
+            <td><span class="status">In Progress</span></td>
+            <td><span class="rate">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #playing-cards{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card{
+            justify-content: space-between;
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            font-size: 35px;
+            display: flex;
+        }
+        .left{
+            text-align: left;
+            padding: 10px;
+            align-self: flex-start;
+        }
+        .middle{
+            text-align: center;
+            font-size: 50px;
+            align-self: center;
+            flex-direction: column;
+        }
+        .right{
+            text-align: right;
+            padding: 10px;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main id="playing-cards">
+        <div class="card">
+            <div class="left">♠</div>
+            <div class="middle">♠</div>
+            <div class="right">♠</div>
+        </div>
+        <div class="card">
+            <div class="left">♠</div>
+            <div class="middle">♠</div>
+            <div class="right">♠</div>
+        </div>
+        <div class="card">
+            <div class="left">♠</div>
+            <div class="middle">♠</div>
+            <div class="right">♠</div>
+        </div>
+    </main>
+</body>
+</html>
